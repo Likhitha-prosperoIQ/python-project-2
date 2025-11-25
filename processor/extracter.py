@@ -13,7 +13,7 @@ try:
 
 except ImportError:
     TESSERACT_AVAILABLE = False
-    print("Tesseract OCR not available. OCR will be skipped.")
+    print("ocr will be skipped")
 
 
 def clean_previous_outputs(output_dir):
