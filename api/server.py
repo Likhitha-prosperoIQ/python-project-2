@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException # pyright: ignore[reportMissingImports]
 import os
 from processor.extracter import extract_coords_combined, find_sender_receiver
 
