@@ -219,19 +219,4 @@ def find_sender_receiver(all_rectangles):
         elif any(k in text_lower for k in keywords_receiver):
             results["receiver"].append((idx + 1, rect))
     return results
-    if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Extract and group text coordinates from PDF")
-    parser.add_argument("pdf", help="Path to PDF file")
-    parser.add_argument("--out", default="C:\\Users\\MR\\Desktop\\python project 2\\out", help="Output folder")
-    parser.add_argument("--no-vis", action="store_true", help="Disable visualization")
-    args = parser.parse_args()
-
-    rectangles_grouped = extract_coords_combined(args.pdf, args.out, visualize=not args.no_vis)
-    addresses = find_sender_receiver([r for line in rectangles_grouped for r in line.values()])
-
-    print("\nSender blocks found:")
-    for s in addresses["sender"]:
-        print(s)
-    print("\nReceiver blocks found:")
-    for r in addresses["receiver"]:
-        print(r)
+    
