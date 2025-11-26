@@ -1,2 +1,15 @@
+# Python virtual environments
 venv/
 .venv/
+
+# Output folder for cropped images and PDFs
+out/
+
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode settings
+.vscode/
