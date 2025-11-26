@@ -235,4 +235,3 @@ def find_sender_receiver(all_rectangles):
     print("\nReceiver blocks found:")
     for r in addresses["receiver"]:
         print(r)
-
